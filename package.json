@@ -1,0 +1,29 @@
+{
+  "name": "test_future",
+  "version": "1.0.0",
+  "description": "test_future",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "start-dev": "node ./node_modules/gulp/bin/gulp.js project:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kweeka/test_future.git"
+  },
+  "author": "Victoria Bakhturova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kweeka/test_future/issues"
+  },
+  "homepage": "https://github.com/kweeka/test_future#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
