@@ -1,0 +1,253 @@
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(/assets/img/banner/banner.png);
+    background-size: cover;
+}
+
+
+@media (max-width: 840px) , (max-device-width: 375px) {
+    .banner__background {
+        height: 500px;
+    }
+}
+
+.banner__wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 701px) and (max-width: 1200px){
+    .banner__wrapper {
+        margin: 0 20px;
+    }
+}
+
+.banner__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 82px;
+}
+
+.banner__search-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 40px;
+    width: 370px;
+}
+
+.search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 25px;
+    margin: 15px 0;
+    border-right: 1px solid #777777;
+    justify-content: flex-end;
+    height: 35px;
+}
+
+.search__img {
+    width: 20px;
+    padding-right: 13px;
+}
+
+.search__text {
+    outline: none;
+    border: none;
+    width: 73%;
+    height: 100%;
+    padding-top: 4px;
+}
+
+.search__text::placeholder {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.collection {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+
+.collection__arrow {
+    border: 1px solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: -4px 0 0 0;
+}
+
+.collection__text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 20px 0 0;
+}
+
+@media (max-width: 700px) , (max-device-width: 375px) {
+    .banner__background {
+        height: 500px;
+    }
+    .banner__wrapper {
+        margin: 0 10px;
+    }
+    .banner__header {
+        padding-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .banner__logo {
+        margin-top: 50px;
+        width: 140px;
+    }
+    .banner__search-wrapper {
+        max-width: 355px;
+        width: 100%;
+        align-self: flex-end;
+    }
+    .search {
+        padding: 0 0 0 13px;
+        margin: 6px 0;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px){
+    .banner__background {
+        height: 500px;
+    }
+    .banner__wrapper {
+        margin: 0 30px;
+    }
+    .banner__header {
+        padding-top: 22px;
+    }
+}
+
+.banner__body {
+    margin: 180px 0 0 0;
+    align-self: flex-end;
+}
+
+.banner__name {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 110px;
+    line-height: 120px;
+}
+
+.banner__name-bottom {
+    color: white;
+}
+
+.banner__sale {
+    margin: 23px 0 0 25px;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.banner__sale span{
+    color: #fbf934;
+}
+
+
+.banner__details {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin: 87px 0 260px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    height: 60px;
+    width: 204px;
+    padding: 0;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px #dcf2f8;
+    outline: none;
+}
+
+.banner__details::after {
+    background-image: url(/assets/img/banner/details_arrow.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 18px;
+    height: 9px;
+    display: block;
+    margin-left: 15px;
+}
+
+@media (min-width: 1101px) and (max-width: 1400px){
+    .banner__body {
+        margin: 115px 0 0 0;
+    }
+    .banner__name {
+        font-size: 70px;
+        line-height: 90px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px){
+    .banner__name {
+        font-size: 50px;
+        line-height: 66px;
+    }
+    .banner__sale {
+        margin: 10px 0 0 25px;
+        font-size: 34px;
+    }
+    .banner__details {
+        margin: 138px 0 130px 20px;
+    }
+    .banner__body {
+        margin: 87px 0 0 0;
+    }
+}
+
+@media (max-width: 700px) , (max-device-width: 375px) {
+    .banner__body {
+        margin: 110px 0 0 0;
+    }
+    .banner__name {
+        margin: 0;
+        display: flex;
+        font-size: 54px;
+        line-height: 46px;
+        justify-content: flex-end;
+        text-shadow: 0 0 10px white, 0 0 10px white;
+    }
+    .banner__sale {
+        margin: 21px 0 0 0;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        display: flex;
+        text-shadow: 0 0 10px black, 0 0 10px black;
+    }
+    .banner__sale span {
+        color: white;
+    }
+    .banner__name-bottom {
+        color: black;
+    }
+    .banner__details {
+        margin: 61px 0 130px 0;
+        height: 51px;
+        width: 189px;
+    }
+}
+
+
+
+
+
